@@ -86,21 +86,29 @@ body {
     width: 48%; /* Each column takes up 48% of the width */
 }
 
-.projects ul {
+/* Style for the new links section */
+.complete-projects {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter background for contrast */
+    padding: 15px; /* Add some padding */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Styling for links */
+.complete-projects ul {
     list-style-type: none;
 }
 
-.projects ul li {
+.complete-projects ul li {
     margin-bottom: 10px;
 }
 
-.projects ul li a {
+.complete-projects ul li a {
     text-decoration: none;
     color: #ff6f61; /* Lighter red for project links */
     font-weight: bold;
 }
 
-.projects ul li a:hover {
+.complete-projects ul li a:hover {
     text-decoration: underline;
     color: #ffffff; /* White on hover for contrast */
 }
