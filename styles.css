@@ -111,7 +111,7 @@ body {
     display: block;
     position: absolute;
     width: 2px;
-    height: 100%;
+    height: calc(100% - 10px); /* Adjust height to bring the line closer to the horizontal line */
     background-color: #5f0808; /* Accent color */
     left: 50%;
     top: 0;
