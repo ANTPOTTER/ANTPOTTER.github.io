@@ -21,7 +21,7 @@ body {
 /* Container styling */
 .container {
     width: 100%;
-    max-width: 500px; /* Original size */
+    max-width: 500px;
     background-color: rgba(35, 39, 42, 0.9); /* Discord panel background with opacity */
     border-radius: 10px;
     padding: 20px;
@@ -70,7 +70,20 @@ body {
 .projects h2 {
     font-size: 22px;
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Two-column layout for projects */
+.project-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+}
+
+/* Incomplete and Complete columns */
+.incomplete-projects, .complete-projects {
+    width: 48%; /* Each column takes up 48% of the width */
 }
 
 .projects ul {
@@ -90,4 +103,16 @@ body {
 .projects ul li a:hover {
     text-decoration: underline;
     color: #ffffff; /* White on hover for contrast */
+}
+
+/* Accent-colored separator between columns */
+.project-columns::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #5f0808; /* Accent color */
+    left: 50%;
+    top: 0;
 }
