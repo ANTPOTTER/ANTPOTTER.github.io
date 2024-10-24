@@ -8,8 +8,8 @@
 /* Body Styling with Background Image */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: url('bg.png') no-repeat center center fixed;
-    background-size: cover; /* Ensures the background covers the entire screen */
+    background: url('bg.png') no-repeat center center fixed !important;
+    background-size: cover !important; /* Ensures the background covers the entire screen */
     color: #ffffff; /* White text */
     padding: 20px;
     display: flex;
