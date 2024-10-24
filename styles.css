@@ -1,96 +1,16 @@
-/* Universal reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling with Background Image */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: url('bg.png') no-repeat center center fixed;
-    background-size: cover; /* Ensures the background covers the entire screen */
-    color: #ffffff; /* White text */
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Container styling */
-.container {
-    width: 100%;
-    max-width: 500px;
-    background-color: rgba(35, 39, 42, 0.9); /* Discord panel background with opacity */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    border: 1px solid #5f0808; /* Accent color border */
-}
-
-/* Profile Header */
-.profile-header {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #5f0808; /* Accent color separator */
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-/* Profile Picture */
-.profile-pic {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #5f0808; /* Accent color outline */
-    margin-right: 20px;
-}
-
-/* Details (username, pronouns, about me) */
-.details h1 {
-    font-size: 28px;
-    color: #ffffff;
-    margin-bottom: 5px;
-}
-
-.details .pronouns {
-    font-size: 16px;
-    color: #b9bbbe;
-    margin-bottom: 10px;
-}
-
-.details .about-me {
-    font-size: 14px;
-    color: #b9bbbe;
-}
-
-/* Projects section */
-.projects h2 {
-    font-size: 22px;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-/* Two-column layout for projects */
-.project-columns {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    position: relative;
-}
-
-/* Incomplete and Complete columns */
-.incomplete-projects, .complete-projects {
-    width: 48%; /* Each column takes up 48% of the width */
-}
+/* ... existing styles ... */
 
 /* Style for the new links section */
 .complete-projects {
     background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter background for contrast */
     padding: 15px; /* Add some padding */
     border-radius: 8px; /* Rounded corners */
+}
+
+/* Bigger titles for links */
+.complete-projects h3 {
+    font-size: 24px; /* Increase title size */
+    margin-bottom: 10px; /* Space below the title */
 }
 
 /* Styling for links */
@@ -106,6 +26,7 @@ body {
     text-decoration: none;
     color: #ff6f61; /* Lighter red for project links */
     font-weight: bold;
+    font-size: 18px; /* Increase link font size */
 }
 
 .complete-projects ul li a:hover {
@@ -119,7 +40,7 @@ body {
     display: block;
     position: absolute;
     width: 2px;
-    height: 100%;
+    height: calc(100% - 5mm); /* Adjust height to be closer to horizontal line */
     background-color: #5f0808; /* Accent color */
     left: 50%;
     top: 0;
