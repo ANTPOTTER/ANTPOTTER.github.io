@@ -1,22 +1,32 @@
-/* Container styling - Increase width and padding */
-.container {
-    width: 100%;
-    max-width: 700px; /* Increased from 500px to 700px */
-    background-color: rgba(35, 39, 42, 0.9); /* Discord panel background with opacity */
-    border-radius: 10px;
-    padding: 30px; /* Increased padding from 20px to 30px */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    border: 1px solid #5f0808; /* Accent color border */
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Profile Picture - Keep this size the same */
-.profile-pic {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #5f0808; /* Accent color outline */
-    margin-right: 30px; /* More space between the image and text */
+/* Body Styling with Background Image */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: url('bg.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the background covers the entire screen */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 500px; /* Original size */
+    background-color: rgba(35, 39, 42, 0.9); /* Discord panel background with opacity */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border: 1px solid #5f0808; /* Accent color border */
 }
 
 /* Profile Header */
@@ -28,29 +38,43 @@
     margin-bottom: 20px;
 }
 
+/* Profile Picture */
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #5f0808; /* Accent color outline */
+    margin-right: 20px;
+}
+
 /* Details (username, pronouns, about me) */
 .details h1 {
-    font-size: 32px; /* Slightly larger font */
+    font-size: 28px;
     color: #ffffff;
     margin-bottom: 5px;
 }
 
 .details .pronouns {
-    font-size: 18px; /* Slightly larger font */
+    font-size: 16px;
     color: #b9bbbe;
     margin-bottom: 10px;
 }
 
 .details .about-me {
-    font-size: 16px; /* Slightly larger font */
+    font-size: 14px;
     color: #b9bbbe;
 }
 
 /* Projects section */
 .projects h2 {
-    font-size: 24px; /* Slightly larger font */
+    font-size: 22px;
     color: #ffffff;
     margin-bottom: 10px;
+}
+
+.projects ul {
+    list-style-type: none;
 }
 
 .projects ul li {
