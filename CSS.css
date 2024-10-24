@@ -33,6 +33,16 @@ input[type="checkbox"] {
     content: '1'; /* True if either input is checked */
 }
 
+/* XOR Gate: "true" (1) if exactly one input is checked */
+.xor-gate span::before {
+    content: '0'; /* Default is false */
+}
+
+#xor-input-1:checked + label + #xor-input-2:not(:checked) + label + .xor-gate span::before,
+#xor-input-2:checked + label + #xor-input-1:not(:checked) + label + .xor-gate span::before {
+    content: '1'; /* True if only one input is checked */
+}
+
 /* NOT Gate: "true" (1) if input is unchecked, "false" (0) if checked */
 .not-gate span::before {
     content: '1'; /* Default output is true */
