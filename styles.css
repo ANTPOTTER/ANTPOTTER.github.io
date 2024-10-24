@@ -89,3 +89,16 @@ body {
 .projects ul li a:hover {
     text-decoration: underline;
 }
+
+
+/* Projects section */
+.projects ul li a {
+    text-decoration: none;
+    color: #ff6f61; /* Lighter red for project links */
+    font-weight: bold; /* Make links stand out */
+}
+
+.projects ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff; /* White on hover for contrast */
+}
